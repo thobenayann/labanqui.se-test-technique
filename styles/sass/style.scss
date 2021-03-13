@@ -62,7 +62,6 @@ body {
                 background-color: vars.$logo-background;
                 border-radius: 50%;
                 &__img {
-
                     padding: 1em;
                 }
             }
@@ -81,4 +80,17 @@ body {
         font-size: 1.5em;
         color: #FFF;
     }
+}
+
+@keyframes rotationAndScale {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.2);
+    }
+}
+
+.main__article__logoList__item__img:hover {
+    animation: rotationAndScale 1s ease-in-out;
 }
