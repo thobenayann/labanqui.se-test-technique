@@ -46,7 +46,7 @@ makeUsersListInDom: function (user) {
     // Je modifie le duplicata pour y intégrer mes données
     newListNode.querySelector('img').setAttribute('src', `${user.avatar}`);
     newListNode.querySelector('img').setAttribute('alt', `avatar-de-${user.first_name}`);
-    newListNode.querySelector('a').setAttribute('href', `${user.email}`);
+    newListNode.querySelector('a').setAttribute('href', `mailto:${user.email}`);
     newListNode.querySelector('span').textContent = `${user.first_name} ${user.last_name}`;
 
     // J'insère le duplicata dans le DOM

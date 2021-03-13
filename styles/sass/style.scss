@@ -63,6 +63,7 @@ body {
                 border-radius: 50%;
                 &__img {
                     padding: 1em;
+                    cursor: pointer;
                 }
             }
         }
@@ -83,7 +84,6 @@ body {
             box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
             border-radius: 1em;
             margin-bottom: 0.5em;
-            // cursor: pointer;
         }
     }
 }

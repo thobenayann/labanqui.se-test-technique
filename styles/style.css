@@ -228,6 +228,7 @@ body {
 }
 .main__article__logoList__item__img {
   padding: 1em;
+  cursor: pointer;
 }
 
 .users-list {
