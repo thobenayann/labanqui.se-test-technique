@@ -251,7 +251,7 @@ body {
     transform: rotate(360deg) scale(1.2);
   }
 }
-.main__article__logoList__item__img:hover {
+.rotationAndScale {
   animation: rotationAndScale 1s ease-in-out;
 }
 
