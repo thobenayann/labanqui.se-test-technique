@@ -230,4 +230,17 @@ body {
   padding: 1em;
 }
 
+.footer {
+  height: 10em;
+  background-color: #01343B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.footer__paragraph {
+  font-size: 1.5em;
+  color: #FFF;
+}
+
 /*# sourceMappingURL=style.css.map */
