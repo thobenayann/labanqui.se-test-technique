@@ -5,13 +5,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+// -- Header -- //
+
 .header {
     background-color: vars.$primary-color;
     height: 20em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    &__img {
+    &__logo {
         width: 13em;
         height: 11em;
     }
@@ -30,6 +32,8 @@ body {
         }
     }
 }
+
+// -- Main -- //
 
 .main {
     padding: 6em 24.5em;
@@ -88,6 +92,8 @@ body {
     }
 }
 
+// -- Footer -- //
+
 .footer {
     height: 10em;
     background-color: #01343B;
@@ -101,6 +107,9 @@ body {
     }
 }
 
+
+// -- ANIMATIONS -- //
+
 @keyframes rotationAndScale {
     from {
         transform: rotate(0deg) scale(1);
@@ -112,4 +121,132 @@ body {
 
 .rotationAndScale {
     animation: rotationAndScale 1s ease-in-out;
+}
+
+
+// -- Responsive -- //
+
+@media screen and (min-width: 813px) and (max-width: 1366px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100%;
+        &__logo {
+            height: auto;
+            width: 10em;
+        }
+        &__nav {
+            font-size: 3em;
+            &__link:hover {
+                font-size: 3.2rem;
+            }
+        }
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 92%;
+        padding: 4em 0;
+        font-size: 2.2em;
+        &__article{
+
+            &__logoList {
+                flex-wrap: wrap;
+                &__item {
+                    &__img {
+                        padding: inherit;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .users-list {
+        &__item {
+            width: 50%;
+            &__avatar {
+                max-width: 10em;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        &__paragraph {
+            font-size: 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 812px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100%;
+        &__logo {
+            height: auto;
+            width: 8em;
+        }
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2em;
+            max-width: 11em;
+            &__link:hover {
+                font-size: 2.2rem;
+            }
+        }
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 92%;
+        padding: 4em 0;
+        font-size: 0.9em;
+        &__article{
+            &__logoList {
+                flex-wrap: wrap;
+                &__item {
+                    &__img {
+                        padding: inherit;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .users-list {
+        &__item {
+            width: 50%;
+            &__avatar {
+                max-width: 10em;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        &__paragraph {
+            font-size: 0.7em;
+        }
+    }
 }
