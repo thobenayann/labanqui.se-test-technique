@@ -30,3 +30,42 @@ body {
         }
     }
 }
+
+.main {
+    padding: 6em 24.5em;
+    color: vars.$primary-color;
+    &__title{
+        font-size: 3em;
+        font-weight: bold;
+        padding-bottom: 1.5em;
+    }
+    &__article {
+        padding-bottom: 2em;
+        &__title {
+            font-size: 2em;
+            padding-bottom: 0.8em;
+        }
+        &__paragraph {
+            padding-bottom: 0.8em;
+            line-height: 1.5em;
+        }
+        &__logoList {
+            display: flex;
+            justify-content: center;
+            &__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 11em;
+                height: 11em;
+                margin: 2em 0.4em;
+                background-color: vars.$logo-background;
+                border-radius: 50%;
+                &__img {
+
+                    padding: 1em;
+                }
+            }
+        }
+    }
+}

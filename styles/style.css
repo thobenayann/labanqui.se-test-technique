@@ -192,4 +192,42 @@ body {
   transition: 0.3s;
 }
 
+.main {
+  padding: 6em 24.5em;
+  color: #33575c;
+}
+.main__title {
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: 1.5em;
+}
+.main__article {
+  padding-bottom: 2em;
+}
+.main__article__title {
+  font-size: 2em;
+  padding-bottom: 0.8em;
+}
+.main__article__paragraph {
+  padding-bottom: 0.8em;
+  line-height: 1.5em;
+}
+.main__article__logoList {
+  display: flex;
+  justify-content: center;
+}
+.main__article__logoList__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11em;
+  height: 11em;
+  margin: 2em 0.4em;
+  background-color: #DFDFDF;
+  border-radius: 50%;
+}
+.main__article__logoList__item__img {
+  padding: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
