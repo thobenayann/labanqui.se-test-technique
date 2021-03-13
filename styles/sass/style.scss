@@ -4,3 +4,29 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.header {
+    background-color: vars.$primary-color;
+    height: 20em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &__img {
+        width: 13em;
+        height: 11em;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        width: 15em;
+        color: vars.$link-color;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: underline .05em vars.$link-color;
+        text-underline-offset: .05em;
+        &__link:hover {
+            font-size: 1.6rem;
+            transition: .3s;
+        }
+    }
+}
